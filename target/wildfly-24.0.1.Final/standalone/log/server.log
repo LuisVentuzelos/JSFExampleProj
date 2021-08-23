@@ -7256,3 +7256,20 @@ Caused by: com.sun.faces.context.FacesFileNotFoundException: /registerAndWelcome
 2021-08-23 18:34:39,712 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0016: Replaced deployment "JSFExampleProj.war" with deployment "JSFExampleProj.war"
 2021-08-23 18:34:39,811 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location C:\Users\luisv\OneDrive - Checkmarx\Desktop\Box\QA\Teams\GoodFellas\Rewrites\JSF\JSFExampleProj\target\wildfly-24.0.1.Final\standalone\data\content\c7\64c246401d52abee2948e8005af63f3f21cd35\content
 2021-08-23 18:34:41,834 WARNING [javax.enterprise.resource.webcontainer.jsf.application] (default task-3) JSF1063: WARNING! Setting non-serializable attribute value into HttpSession (key: indexBean, value class: ch.checkmarx.jsf.sample.IndexBean).
+2021-08-23 18:41:00,084 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0272: Suspending server
+2021-08-23 18:41:00,087 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2021-08-23 18:41:00,089 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2021-08-23 18:41:00,103 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2021-08-23 18:41:00,106 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 26) WFLYUT0022: Unregistered web context: '/JSFExampleProj' from server 'default-server'
+2021-08-23 18:41:00,131 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2021-08-23 18:41:00,158 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2021-08-23 18:41:00,183 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2021-08-23 18:41:00,190 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2021-08-23 18:41:00,191 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2021-08-23 18:41:00,196 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2021-08-23 18:41:00,215 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2021-08-23 18:41:00,233 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.2.8.Final stopping
+2021-08-23 18:41:00,307 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 95) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+2021-08-23 18:41:00,309 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 95) Stopping cache manager null on null
+2021-08-23 18:41:00,653 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment JSFExampleProj.war (runtime-name: JSFExampleProj.war) in 560ms
+2021-08-23 18:41:00,660 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 24.0.1.Final (WildFly Core 16.0.1.Final) stopped in 568ms
