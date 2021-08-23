@@ -1,0 +1,58 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml"
+      xmlns:h = "http://java.sun.com/jsf/html"
+      xmlns:f = "http://java.sun.com/jsf/core">
+
+<h:body>
+    <h2>This is Page2</h2>
+    <h:form>
+        <h:commandButton action = "home?faces-redirect = true"
+                         value = "Back To Home Page" />
+        <h:outputFormat value = "Hello {0}!.">
+            <f:param value = "#{loginBean.username}" />
+        </h:outputFormat>
+
+    </h:form>
+
+    <h2>actionListener Examples</h2>
+
+    <h:form>
+        <h2>Method Binding</h2>
+        <hr/>
+
+        <h:commandButton id = "submitButton"
+                         value = "Submit" action = "#{helloBean.showResult}"
+                         actionListener = "#{helloBean.updateData}" >
+    </h:commandButton>
+
+   <hr/>
+
+    <h2>ActionListener interface</h2>
+
+        <h:commandButton id = "submitButton1"
+                         value = "Submit" action = "#{helloBean.showResult}" >
+            <f:actionListener
+                    type = "ch.checkmarx.jsf.sample.Listeners.UserActionListener" />
+        </h:commandButton>
+    </h:form>
+    <hr/>
+    <h:form>
+        <h2>ValueChangeListener interface</h2>
+        <hr/>
+        <h:panelGrid columns = "2">
+            Selected locale :
+            <h:selectOneMenu value = "#{localeData.selectedCountry}"
+                             onchange = "submit()">
+                <f:valueChangeListener
+                        type = "ch.checkmarx.jsf.sample.Listeners.LocaleChangeListener" />
+                <f:selectItems value = "#{localeData.countries}" />
+            </h:selectOneMenu>
+            Country Name:
+            <h:outputText id = "country1" value = "#{localeData.selectedCountry}"
+                          size = "20" />
+        </h:panelGrid>
+    </h:form>
+</h:body>
+</html>
