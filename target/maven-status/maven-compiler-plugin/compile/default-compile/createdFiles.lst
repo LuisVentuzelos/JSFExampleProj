@@ -1,5 +1,6 @@
 ch\checkmarx\jsf\sample\UserBean$Food.class
 ch\checkmarx\jsf\sample\UserBean$Color.class
+ch\checkmarx\jsf\sample\User.class
 ch\checkmarx\jsf\sample\UserBean$Fruit.class
 ch\checkmarx\jsf\sample\LoginBean.class
 ch\checkmarx\jsf\sample\NavigationController.class
@@ -10,6 +11,7 @@ ch\checkmarx\jsf\sample\UserBean$Year.class
 ch\checkmarx\jsf\sample\LocaleBean.class
 ch\checkmarx\jsf\sample\EmployeeBean.class
 ch\checkmarx\jsf\sample\UserDataOne.class
+ch\checkmarx\jsf\sample\IndexBean.class
 ch\checkmarx\jsf\sample\EmployeeBean$Employee.class
 ch\checkmarx\jsf\sample\OrderBean$Order.class
 ch\checkmarx\jsf\sample\Listeners\UserActionListener.class

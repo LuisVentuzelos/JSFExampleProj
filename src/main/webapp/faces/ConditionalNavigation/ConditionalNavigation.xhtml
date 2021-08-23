@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <h:outputScript library="javax.faces" name="jsf.js"/>
+</h:head>
+<h:body>
+    <f:view>
+        <h2>JSF2 Dynamic Navigation - Conditional Navigation Example</h2>
+        <h:form prependId="false">
+            <h:panelGrid columns="2">
+                <h:outputText value="Enter Username: "/>
+                <h:inputText value="#{indexBean.username}"/>
+                <h:outputText value="Enter Password: "/>
+                <h:inputText value="#{indexBean.password}"/>
+            </h:panelGrid>
+            <h:commandButton value="Login" action="#{indexBean.login}"></h:commandButton>
+        </h:form>
+    </f:view>
+</h:body>
+</html>
