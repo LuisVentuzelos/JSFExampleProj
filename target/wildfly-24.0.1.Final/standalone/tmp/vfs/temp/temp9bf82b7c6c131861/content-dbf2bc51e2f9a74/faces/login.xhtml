@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:templates="http://java.sun.com/jsf/composite/templates"
+>
+<h:body>
+<ui:composition template="/common/commonLayout.xhtml">
+
+<ui:define name="content">
+<h:form>
+<h:panelGrid id = "panel" columns = "2" border = "1"
+             cellpadding = "10" cellspacing = "1">
+    <f:facet name = "header">
+        <h:outputText value = "Login"/>
+    </f:facet>
+
+    <table>
+        <tr>
+            <td width="50%">Enter Your Username : </td>
+            <td width="50%">
+                <h:inputText id = "username"  value="#{loginBean.username}">
+                    <f:validateLength for = "username" minimum = "5" maximum = "20" />
+                    <f:validateRegex  pattern="^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$"/>
+                </h:inputText>
+        </td>
+            <td colspan="2">
+               <templates:register emailLable="E-mail"
+                                  emailValue="#{loginBean.email}"/>
+            </td>
+        </tr>
+        <tr><td colspan="2"> <h:message for = "username" style = "color:red" /></td></tr>
+        <tr><td width="50%"> Enter Your Password : </td>
+            <td width="50%"><h:inputSecret id="password" value="#{loginBean.password}">
+                <f:validateLength for = "password" minimum = "8" maximum = "20" />
+            </h:inputSecret>
+            </td>
+        </tr>
+        <tr><td colspan="2"> <h:message for = "password" style = "color:red" /></td></tr>
+    </table>
+    <br/>
+
+    <f:facet name = "footer">
+        <h:panelGroup style = "display:block; text-align:center">
+            <h:commandButton value="Login" action="#{loginBean.resolveLogin}"/>
+        </h:panelGroup>
+    </f:facet>
+</h:panelGrid>
+</h:form>
+</ui:define>
+</ui:composition>
+</h:body>
+</html>

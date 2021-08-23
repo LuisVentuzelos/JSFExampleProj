@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+>
+
+<h:body>
+
+    <h1>Registered Favorites</h1>
+
+
+    <ol>
+        <li>userBean.rememberMe : #{userBean.rememberMe}</li>
+        <li>userBean.favFruit1 : #{userBean.favFruit1InString}</li>
+        <li>userBean.favFruit2 : #{userBean.favFruit2InString}</li>
+        <li>userBean.favFruit3 : #{userBean.favFruit3InString}</li>
+        <li>userBean.favFruit4 : #{userBean.favFruit4InString}</li>
+    </ol>
+
+<ol>
+    <li>userBean.favColor1 : #{userBean.favColor1}</li>
+    <li>userBean.favColor2 : #{userBean.favColor2}</li>
+    <li>userBean.favColor3 : #{userBean.favColor3}</li>
+</ol>
+
+    <ol>
+        <li>userBean.favYear1 : #{userBean.favYear1}</li>
+        <li>userBean.favYear2 : #{userBean.favYear2}</li>
+        <li>userBean.favYear3 : #{userBean.favYear3}</li>
+    </ol>
+    <ol>
+        <li>userBean.favFood1 : #{userBean.favFood1InString}</li>
+        <li>userBean.favFood2 : #{userBean.favFood2InString}</li>
+        <li>userBean.favFood3 : #{userBean.favFood3InString}</li>
+    </ol>
+
+    <ol>
+        <li>userBean.favCoffee1 : #{userBean.favCoffee1}</li>
+        <li>userBean.favCoffee2 : #{userBean.favCoffee2}</li>
+        <li>userBean.favCoffee3 : #{userBean.favCoffee3}</li>
+    </ol>
+
+    <h:form>
+        <h:commandButton action = "home?faces-redirect = true"
+                         value = "Back To Home Page" />
+
+    </h:form>
+</h:body>
+</html>

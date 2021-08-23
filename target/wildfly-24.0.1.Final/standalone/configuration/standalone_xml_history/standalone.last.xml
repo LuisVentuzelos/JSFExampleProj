@@ -553,7 +553,7 @@
     </socket-binding-group>
     <deployments>
         <deployment name="JSFExampleProj.war" runtime-name="JSFExampleProj.war">
-            <content sha1="4af8b465c1c7115590d288036442adf44e1d42e1"/>
+            <content sha1="68e1213f9c92fe2e9edebeb61dcb1ddcc2a2a6fa"/>
         </deployment>
     </deployments>
 </server>
